@@ -1,36 +1,60 @@
-/* App Container */
-div {
-  text-align: center;
-  margin: 2rem;
+/* Reset some default styles */
+body, div, h1, button, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Advice Container */
+.advice-container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
 }
 
 /* Advice Heading */
-h1 {
-  font-size: 1.5rem;
+.advice-heading {
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: #333;
 }
 
 /* Get Advice Button */
-button {
+.get-advice-button {
   background-color: #007bff;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 1rem;
+  border-radius: 4px;
 }
 
-button:hover {
+.get-advice-button:hover {
   background-color: #0056b3;
 }
 
 /* Message Paragraph */
-p {
-  font-size: 1rem;
+.message-paragraph {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #777;
 }
 
 /* Strong Text Inside Message */
 strong {
   font-weight: bold;
+  color: #333;
 }
