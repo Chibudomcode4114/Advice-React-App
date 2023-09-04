@@ -1,3 +1,4 @@
+import './App.css'; // Import your CSS file
 import { useEffect, useState } from "react";
 export default function App() {
   const [advice, setAdvice] = useState('');
@@ -26,7 +27,7 @@ export default function App() {
 function Message(props) {
   return (
     <p>
-      You are on a <strong>{props.count}</strong> advice count
+      Advice #<strong>{props.count}</strong>
     </p>
   )
 }
